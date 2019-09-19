@@ -1,0 +1,18 @@
+<div id="toc">
+  <nav>
+    <h4>Table of Posts in {{page.category}}</h4>
+    <ul>
+      {% for blog in site.posts %} 
+          {% if page.category == blog.category %}
+      <li>
+            {% if page.title != blog.title %}
+              <a href="{{site.baseurl}}{{blog.url}}">{{ blog.title }}</a>
+            {% else %}
+              {{ blog.title }}
+            {% endif %}
+      </li>
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

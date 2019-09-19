@@ -1,0 +1,15 @@
+---
+layout: blog
+category: keystone
+---
+
+<h1>Keystone Instructions</h1>
+
+<ul>
+  {% for blog in site.categories.keystone reversed %}
+  <li>
+    <a href="{{site.baseurl}}{{blog.url}}">{{ blog.title }}</a>
+    <p>{{ blog.meta }}</p>
+  </li>
+  {% endfor %}
+</ul>

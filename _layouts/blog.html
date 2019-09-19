@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div id="second-header">
+  <ul class="blue">
+    <li><a href="{{site.baseurl}}/unicorn_blog.html" title="unicorn" class="{% if page.category == 'unicorn' %}current{% endif %}" ><span>Unicorn</span></a></li>
+    <li><a href="{{site.baseurl}}/radare2_blog.html" title="radare2" class="{% if page.category == 'radare2' %}current{% endif %}" ><span>Radare2</span></a></li>
+    <li><a href="{{site.baseurl}}/capstone_blog.html" title="capstone" class="{% if page.category == 'capstone' %}current{% endif %}" ><span>Capstone</span></a></li>
+    <li><a href="{{site.baseurl}}/keystone_blog.html" title="keystone" class="{% if page.category == 'keystone' %}current{% endif %}" ><span>Keystone</span></a></li>
+    <li><a href="{{site.baseurl}}/pwndbg_blog.html" title="pwndbg" class="{% if page.category == 'pwndbg' %}current{% endif %}" ><span>Pwndbg</span></a></li>
+  </ul>
+</div>
+
+{% if page.title != nil %}
+<div id="toc">
+  <nav>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Table of Posts in <I>{{page.category | capitalize}} Instructions</I></h5>
+    <ul>
+      {% for blog in site.posts reversed %} 
+          {% if page.category == blog.category %}
+      <li>
+            {% if page.title != blog.title %}
+              <a href="{{site.baseurl}}{{blog.url}}">{{ blog.title }}</a>
+            {% else %}
+              {{ blog.title }}
+            {% endif %}
+      </li>
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+<hr/>
+{% endif %}
+
+{{ content }}
+

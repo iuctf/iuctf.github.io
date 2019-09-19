@@ -1,0 +1,6 @@
+<ul class="blue">
+  <li><a href="{{site.baseurl}}/about" title="About" class="{% if page.url contains 'about' %}current{% endif %}" ><span>About</span></a></li>
+  <li><a href="{{site.baseurl}}/tool.html" title="Tools" class="{% if page.url contains 'tool' or page.layout == 'blog' %}current{% endif %}" ><span>Tools</span></a></li>
+  <li><a href="{{site.baseurl}}/learning.html" title="Learning" class="{% if page.url contains 'learning' or page.layout == 'learning' %}current{% endif %}" ><span>Learning</span></a></li>
+</ul>
+

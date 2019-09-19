@@ -1,0 +1,15 @@
+---
+layout: learning
+category: talks
+---
+
+<h1>Learning from talks, conferences, and prior experience.</h1>
+
+<ul>
+  {% for learning in site.categories.talks reversed %}
+  <li>
+    <a href="{{site.baseurl}}{{learning.url}}">{{ learning.title }}</a>
+    <p>{{ learning.meta }}</p>
+  </li>
+  {% endfor %}
+</ul>

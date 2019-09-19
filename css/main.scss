@@ -1,0 +1,163 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+.current {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+#header ul {
+  padding: 5px;
+  margin: 10px 0;
+  list-style: none;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+#header ul li {
+  float: left;
+  display: inline; /*For ignore double margin in IE6*/
+  margin: 0 10px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  float:left;
+  color: #999;
+  cursor: pointer;
+  font: 900 14px/22px "Arial", Helvetica, sans-serif;
+}
+
+#header ul li a span {
+  margin: 0 10px 0 -10px;
+  padding: 1px 8px 5px 18px;
+  position: relative; /*To fix IE6 problem (not displaying)*/
+  float:left;
+}
+
+
+/*BLUE*/
+#header ul.blue li a.current, ul.blue li a:hover {
+  background: url("../images/blue.png") no-repeat top right;
+  color: #0d5f83;
+}
+
+#header ul.blue li a.current span, ul.blue li a:hover span {
+  background: url("../images/blue.png") no-repeat top left;
+}
+
+
+#second-header {
+  margin: -10px 0 20px 0;
+}
+#second-header ul li a span {
+  margin: 0 10px 0 -10px;
+  padding: 1px 8px 5px 18px;
+  position: relative; /*To fix IE6 problem (not displaying)*/
+  float:left;
+}
+
+#second-header ul {
+  margin: -10px 0 20px;
+  list-style: none;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+#second-header ul li {
+  float: left;
+  display: inline; /*For ignore double margin in IE6*/
+  margin: 0 10px;
+}
+
+#second-header ul li a {
+  text-decoration: none;
+  float:left;
+  color: #999;
+  cursor: pointer;
+  font: 900 12px/20px "Arial", Helvetica, sans-serif;
+}
+
+#second-header ul li a span {
+  margin: 0 10px 0 -10px;
+  padding: 1px 8px 5px 18px;
+  position: relative; /*To fix IE6 problem (not displaying)*/
+  float:left;
+}
+
+
+#second-header ul.blue li a.current, ul.blue li a:hover {
+  background: url("../images/blue.png") no-repeat top right;
+  color: #0d5f83;
+}
+
+#second-header ul.blue li a.current span, ul.blue li a:hover span {
+  background: url("../images/blue.png") no-repeat top left;
+}
+
+#toc ul {
+  margin: -15px 0 5px;
+  list-style: circle inside;
+  background-color: #eee;
+  padding: 10px 20px 10px 20px;
+  font: 900 11px/15px "Arial", Helvetica, sans-serif;
+  color: #555;
+  border-radius: 15px;
+}
+#toc h5 {
+  font-weight: bold;
+  color: #555;
+}

@@ -1,0 +1,15 @@
+---
+layout: learning
+category: books
+---
+
+<h1>Learning from book</h1>
+
+<ul>
+  {% for learning in site.categories.books reversed %}
+  <li>
+    <a href="{{site.baseurl}}{{learning.url}}">{{ learning.title }}</a>
+    <p>{{ learning.meta }}</p>
+  </li>
+  {% endfor %}
+</ul>

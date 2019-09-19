@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div id="second-header">
+  <ul class="blue">
+    <li><a href="{{site.baseurl}}/talk_learning.html" title="talk" class="{% if page.category == 'talks' %}current{% endif %}" ><span>Talks</span></a></li>
+    <li><a href="{{site.baseurl}}/book_learning.html" title="book" class="{% if page.category == 'books' %}current{% endif %}" ><span>Books</span></a></li>
+  </ul>
+</div>
+
+{% if page.title != nil %}
+<div id="toc">
+  <nav>
+    <h5>&nbsp;&nbsp;&nbsp;&nbsp;Table of Posts in <I>{{page.category | capitalize}} Learning </I></h5>
+    <ul>
+      {% for learning in site.posts reversed %} 
+          {% if page.category == learning.category %}
+      <li>
+            {% if page.title != learning.title %}
+              <a href="{{site.baseurl}}{{learning.url}}">{{ learning.title }}</a>
+            {% else %}
+              {{ learning.title }}
+            {% endif %}
+      </li>
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+<hr/>
+{% endif %}
+
+{{ content }}
+

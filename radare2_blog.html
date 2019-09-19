@@ -1,0 +1,15 @@
+---
+layout: blog
+category: radare2
+---
+
+<h1>Radare2 Instructions</h1>
+
+<ul>
+  {% for blog in site.categories.radare2 reversed %}
+  <li>
+    <a href="{{site.baseurl}}{{blog.url}}">{{ blog.title }}</a>
+    <p>{{ blog.meta }}</p>
+  </li>
+  {% endfor %}
+</ul>
