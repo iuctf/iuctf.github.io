@@ -5,14 +5,14 @@ permalink: /about/
 ---
 
 **Team member**
-* Gianpaolo Russo
+* Vafa Andalibi
 * DongInn Kim
-* Kaushik Srinivasan
-* Omkar Bhide
-* Behnood Momenzadeh
-* Joshua Streiff
-* Gary Martin Deckard
-* Matthew Thomas Remmel
+* Yifan Zhang
+* Hongbo Chen
+* Zilong Lin
+* Nicolas Serrano
+* Maxwell Gruenberg
+* Eun Seong
 
-The source of our gitlab pages is accessible via [https://gitlab.com/iuctf/notes](https://gitlab.com/iuctf/notes)
+The source of our gitlab pages is accessible via [https://github.com/iuctf/iuctf.github.io](https://github.com/iuctf/iuctf.github.io)
 

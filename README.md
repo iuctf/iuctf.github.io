@@ -1,11 +1,11 @@
-This is the startup of the IUCTF group's "notes" repository. The "notes" gitlab pages are available at http://iuctf.gitlab.io/notes/
+This is the startup of the IUCTF group's repository. The github pages are available at http://iuctf.github.io/
 
-Our gitlab pages are integrated with [jekyll](https://jekyllrb.com/docs/installation/) to update them in between the gitlab server and local machines asynchronously.
+Our github pages are integrated with [jekyll](https://jekyllrb.com/docs/installation/) to update them in between the github server and local machines asynchronously.
 
-[gitlab markdown syntax](https://docs.gitlab.com/ee/user/markdown.html)
+[github markdown syntax](https://guides.github.com/features/mastering-markdown/)
 
-A quick instruction of adding/updating new gitlab page(s):
-1. ```git clone git@gitlab.com:iuctf/notes.git```
+A quick instruction of adding/updating new github page(s):
+1. ```git clone git@github.com:iuctf/iuctf.github.io.git```
 2. `cd notes`
 3. If you do not have a direct instruction page of your tool, create one by copying one of the other pages (e.g. unicorn_blog.html, keystone_blog.html, ...)
   * make sure that you add the following meta data part to your page
@@ -33,4 +33,4 @@ Please refer to the `unicorn/2017-05-23-introduction-to-unicorn.md` to see how t
 7. Once you are happy with all your changes, add them to the repository:  
    `git status` && `git commit -a` && `git push`
 
-[Basic instruction of gitlab + jekyll](https://gitlab.com/pages/jekyll) 
+[Basic instruction of github + jekyll](https://github.com/pages/jekyll) 

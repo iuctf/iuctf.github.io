@@ -10,8 +10,8 @@ title: IU CTF Tools
 email: iuctf-l@indiana.edu
 description: > # this means to ignore newlines until "baseurl:"
   We write/keep awesome instructions for the tools that IU CTF works on.
-baseurl: "/notes" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://iuctf.gitlab.io" # change this to the base hostname & protocol for your site
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://iuctf.github.io" # change this to the base hostname & protocol for your site
 twitter_username: iuctf
 github_username:  iuctf
 
