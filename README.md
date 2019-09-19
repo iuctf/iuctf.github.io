@@ -6,7 +6,7 @@ Our github pages are integrated with [jekyll](https://jekyllrb.com/docs/installa
 
 A quick instruction of adding/updating new github page(s):
 1. ```git clone git@github.com:iuctf/iuctf.github.io.git```
-2. `cd notes`
+2. `cd iuctf.github.io`
 3. If you do not have a direct instruction page of your tool, create one by copying one of the other pages (e.g. unicorn_blog.html, keystone_blog.html, ...)
   * make sure that you add the following meta data part to your page
 ```
@@ -29,7 +29,7 @@ Please refer to the `unicorn/2017-05-23-introduction-to-unicorn.md` to see how t
      1. `gem install jekyll bundler`
      2. `bundle install`
      3. `bundle exec  jekyll serve`
-  * Check to see how your changes work in your local machine via http://127.0.0.1:4000/notes/
+  * Check to see how your changes work in your local machine via http://127.0.0.1:4000/
 7. Once you are happy with all your changes, add them to the repository:  
    `git status` && `git commit -a` && `git push`
 
